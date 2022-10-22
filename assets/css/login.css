@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+box-sizing: border-box;
+
+}
+
+
+body{
+    background-image: url("../img/java.svg");
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    
+}
+
+.titulo {
+    text-align: center;
+    font-family: 'Yeseva One', cursive;
+    font-size: 30px;
+    text-transform:capitalize;
+    position: center;
+    color: rgb(13, 13, 13);
+    }
+.circle{
+    width: 50px;
+    animation: rotar 2s alternate infinite;
+
+}
+
+@keyframes rotar {
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+    .formulario {
+        width: 400px;
+        height: 250px;
+        background-color: rgba(113, 109, 105, 0.11); 
+        border-radius: 2%;  
+        text-align: center;
+        padding: 30px;
+        }
+     
+        input {
+            background-color: rgb(255, 255, 255);
+            border-style:hidden;
+            border-radius: 5px;
+            width: 90%;
+            padding: 12px;
+            margin: 10px;
+            font-size: 15px;
+            
+        }
+#boton {
+    cursor: pointer;
+    outline: none;
+    width: 25%;
+    height: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    background: rgb(7, 178, 21);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.3rem rgba(87, 82, 82, 0.611);
+
+  }
+
+
+#boton:hover{
+    background: rgb(46, 210, 60);
+}
+button:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 440px) {
+    .titulo {
+        font-size: 25px;
+    }
+    .formulario {
+        width: 300px;
+        height: 200px;
+    }
+    #boton {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+
+    }
+}
